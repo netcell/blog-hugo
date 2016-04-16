@@ -1,3 +1,33 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+pygmentsuseclasses = true
+baseurl = "http://netcell.github.io/"
+copyright = "All rights reserved - 2016"
+disqusshortname = "ntanh"
+languagecode = "en-us"
+paginate = 5
+pluralizelisttitles = false
+theme = "casper"
+title = "@netcell"
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/"
+weight = -120
+[params]
+author = "netcell"
+authorlocation = "Hanoi, Vietnam"
+authorwebsite = "http://netcell.github.io"
+bio = "Developer, jack of all trades and master of some."
+cover = "img/bg.jpg"
+description = "Romantic Programming."
+githubName = "netcell"
+facebookName = "netcell"
+googleAnalyticsUserID = "UA-62565835-4"
+hideHUGOSupport = true
+logo = "img/logo.jpg"
+twitterName = "netcell"
+[permalinks]
+post = "/:slug/"
+[sitemap]
+ChangeFreq = ""
+Filename = "sitemap.xml"
+Priority = "-1"
