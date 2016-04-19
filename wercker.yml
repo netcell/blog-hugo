@@ -2,7 +2,7 @@ box: debian
 build:
     steps:
         - arjen/hugo-build:
-            theme: casper
+            theme: netcell
 deploy:
     steps:
         - install-packages:
