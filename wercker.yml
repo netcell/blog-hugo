@@ -3,6 +3,8 @@ build:
     steps:
         - arjen/hugo-build:
             theme: netcell
+deploy:
+    steps:
         - install-packages:
             packages: git ssh-client
         - leipert/git-push:
