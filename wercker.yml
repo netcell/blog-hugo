@@ -1,0 +1,14 @@
+box: debian
+build:
+    steps:
+        - arjen/hugo-build:
+            theme: casper
+deploy:
+    steps:
+        - install-packages:
+            packages: git ssh-client
+        - leipert/git-push:
+            gh_oauth: $GIT_TOKEN
+            repo: netcell/netcell.github.io
+            branch: master
+            basedir: public
