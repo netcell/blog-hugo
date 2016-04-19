@@ -1,7 +1,7 @@
 pygmentsuseclasses = true
 baseurl = "http://netcell.github.io/"
 copyright = "All rights reserved - 2016"
-disqusshortname = "ntanh"
+disqusshortname = "netcell"
 languagecode = "en-us"
 paginate = 5
 pluralizelisttitles = false
@@ -12,6 +12,11 @@ identifier = "blog"
 name = "Blog"
 url = "/"
 weight = -120
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/page/about"
+weight = 0
 [params]
 author = "netcell"
 authorlocation = "Hanoi, Vietnam"
@@ -25,8 +30,9 @@ googleAnalyticsUserID = "UA-62565835-4"
 hideHUGOSupport = true
 logo = "img/logo.jpg"
 twitterName = "netcell"
+RSSLink = "http://eepurl.com/bYfnUP"
 [permalinks]
-post = "/:slug/"
+post = "/:year/:month/:filename/"
 [sitemap]
 ChangeFreq = ""
 Filename = "sitemap.xml"
