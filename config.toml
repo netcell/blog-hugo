@@ -5,7 +5,7 @@ disqusshortname = "netcell"
 languagecode = "en-us"
 paginate = 5
 pluralizelisttitles = false
-theme = "casper"
+theme = "netcell"
 title = "@netcell"
 [[menu.main]]
 identifier = "blog"
