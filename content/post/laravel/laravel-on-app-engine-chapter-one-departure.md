@@ -6,8 +6,8 @@ image = ""
 menu = ""
 share = true
 tags = []
-title = "Convert Base64 string to an image file"
-excerpt = "I am trying to convert my base64 image string to an image file. But I am getting an error of invalid image, whats wrong here?"
+title = "Laravel on App Engine - Chapter One: Trouble in Paradise"
+excerpt = "My bitter sweet taste experience on deploying Laravel on Google App Engine"
 
 +++
 
