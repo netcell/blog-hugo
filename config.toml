@@ -12,10 +12,20 @@ identifier = "blog"
 name = "Blog"
 url = "/"
 weight = -120
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/page/about"
+[[menu.product]]
+identifier = "phaser-inspector"
+name = "Phaser Inspector"
+url = "http://netcell.github.io/phaser-inspector"
+weight = 1
+[[menu.product]]
+identifier = "phaser-nine-patch"
+name = "Phaser Nine Patch"
+url = "http://netcell.github.io/nine-patch-phaser-plugin"
+weight = 2
+[[menu.product]]
+identifier = "netify"
+name = "Netify"
+url = "http://netcell.github.io/netify"
 weight = 0
 [params]
 author = "netcell"

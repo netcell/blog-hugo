@@ -2075,3 +2075,9 @@ body {
         display: none;
     }
 }
+
+.seperator.nav-opened {
+    height: 1px;
+    border-bottom: 1px rgba(232,240,247,0.2) solid;
+    margin: 10px auto;
+}
