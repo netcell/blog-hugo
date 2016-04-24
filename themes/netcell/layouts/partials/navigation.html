@@ -5,15 +5,44 @@
     </a>
     <ul>
         {{ $currentNode := . }}
-        
+
         {{ range .Site.Menus.main }}
             {{.Pre}}
             <li class="nav-opened{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)}} nav-current{{end}}" role="presentation">
-            	<a href="{{.URL}}">{{.Name}}</a>
+                <a href="{{.URL}}">{{.Name}}</a>
+            </li>
+        {{end}}
+        <div class="seperator nav-opened"></div>
+        {{ range .Site.Menus.product }}
+            {{.Pre}}
+            <li class="nav-opened{{if or ($currentNode.IsMenuCurrent "product" .) ($currentNode.HasMenuCurrent "product" .)}} nav-current{{end}}" role="presentation">
+                <a href="{{.URL}}">{{.Name}}</a>
+            </li>
+        {{end}}
+        <div class="seperator nav-opened"></div>
+        {{ if .Site.Params.githubName }}
+            <li class="nav-opened" role="presentation">
+                <a href="https://github.com/{{ .Site.Params.githubName }}" target="_blank">
+                    Github
+                </a>
+            </li>
+        {{end}}
+        {{ if .Site.Params.twitterName }}
+            <li class="nav-opened" role="presentation">
+                <a href="https://twitter.com/{{ .Site.Params.twitterName }}" target="_blank">
+                    Twitter
+                </a>
+            </li>
+        {{end}}
+        {{ if .Site.Params.facebookName }}
+            <li class="nav-opened" role="presentation">
+                <a href="https://facebook.com/{{ .Site.Params.facebookName }}" target="_blank">
+                    Facebook
+                </a>
             </li>
         {{end}}
     </ul>
-    
+
     {{ if .Site.Params.RSSLink}}
     <a class="subscribe-button icon-feed" href="{{.Site.Params.RSSLink }}">Subscribe</a> </div>
     {{else}}

@@ -2016,3 +2016,41 @@ article.post-li {
 .hashtag {
     margin-right: 3px;
 }
+
+body {
+    background: #111;
+}
+
+.site-wrapper {
+    margin-right: 240px;
+}
+
+@media only screen and (max-width: 900px) {
+    .site-wrapper {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .menu-button {
+        display: none;
+    }
+    body.nav-closed .nav {
+        -webkit-transform: translate3D(0, 0, 0);
+        -ms-transform: translate3D(0, 0, 0);
+        transform: translate3D(0, 0, 0);
+        z-index: 11;
+        opacity: 1;
+    }
+    body.nav-opened .site-wrapper {
+        overflow-x: hidden;
+        -webkit-transform: translate3D(0px, 0, 0);
+        -ms-transform: translate3D(0px, 0, 0);
+        transform: translate3D(0px, 0, 0);
+        -webkit-transition: none;
+        transition: none;
+    }
+    .nav-close {
+        display: none;
+    }
+}
