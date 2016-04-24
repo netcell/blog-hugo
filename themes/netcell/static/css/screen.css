@@ -2025,6 +2025,21 @@ body {
     margin-right: 240px;
 }
 
+.back-to-top {
+    position       : fixed;
+    bottom         : 20px;
+    right          : 20px;
+    display        : inline-block;
+    color          : #000;
+    z-index        : 11;
+    text-align     : center;
+    width          : 33px;
+    padding-top    : 3px;
+    padding-bottom : 0px;
+    border         : 2px rgba(17,17,17,0.7) solid;
+    cursor         : pointer;
+}
+
 @media only screen and (max-width: 900px) {
     .site-wrapper {
         margin-right: 0;
@@ -2032,6 +2047,9 @@ body {
 }
 
 @media only screen and (min-width: 901px) {
+    .back-to-top {
+        right: 240px;
+    }
     .menu-button {
         display: none;
     }
