@@ -164,6 +164,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-arrow-left:before {
     content: "\f431";
 }
+.icon-arrow-up:before {
+    content: "\f432";
+}
 .icon-stats:before {
     content: "\f508";
 }
