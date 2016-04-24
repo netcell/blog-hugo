@@ -6,7 +6,7 @@ image = ""
 menu = ""
 share = true
 tags = []
-title = "Convert Base64 string to an image file"
+title = "Handling JSON like a boss"
 excerpt = "I am trying to convert my base64 image string to an image file. But I am getting an error of invalid image, whats wrong here?"
 
 +++
