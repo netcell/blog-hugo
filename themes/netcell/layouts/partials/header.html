@@ -12,6 +12,7 @@
     {{ if .IsPage }}
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Params.excerpt }}{{ end }}" />
   	<meta property="og:type" content="article" />
+  	<meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}{{.Params.image}}{{ else }}{{.Site.BaseURL}}{{ .Site.Params.logo }}{{ end }}" />
 
     <meta property="og:article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
 
