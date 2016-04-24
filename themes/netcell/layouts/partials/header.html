@@ -17,11 +17,11 @@
       <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Params.excerpt }}{{ end }}"/>
       <meta property="og:type" content="article" />
       {{ if .Params.image }}
-        <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary_large_image">
       	<meta property="og:image" content="{{.Site.BaseURL}}{{.Params.image}}" />
         <meta name="twitter:image" content="{{.Site.BaseURL}}{{.Params.image}}" />
       {{else}}
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary">
         <meta property="og:image" content="{{.Site.BaseURL}}{{ .Site.Params.logo }}" />
         <meta name="twitter:image" content="{{.Site.BaseURL}}{{ .Site.Params.logo }}" />
       {{end}}
