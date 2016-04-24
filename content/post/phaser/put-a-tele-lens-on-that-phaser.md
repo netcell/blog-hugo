@@ -2,7 +2,7 @@
 comments = true
 date = "2015-03-14"
 draft = false
-image = "img/bg.jpg"
+image = ""
 menu = ""
 share = true
 slug = "put-a-tele-lens-on-that-phaser"
