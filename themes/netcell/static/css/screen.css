@@ -2077,3 +2077,7 @@ body {
     border-bottom: 1px rgba(232,240,247,0.2) solid;
     margin: 10px auto;
 }
+
+.post-content, .post-excerpt {
+    text-align: justify;
+}
